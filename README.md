@@ -12,7 +12,7 @@ reading information about each file from the audio ID3 tags.
     version of getID3 and place it somewhere nearby.
  2. Edit the configuration variables in feed.php to match your server set up
     all audio files must be within the same directory.
- 3. The URL to feed.php /is/ your feed url.
+ 3. The URL to feed.php _is_ your feed url.
     [Submit this to iTunes](http://support.apple.com/kb/HT1819) & enjoy.
 
 ## getID3

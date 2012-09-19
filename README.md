@@ -9,19 +9,18 @@ reading information about each file from the audio ID3 tags.
 ## Usage
 
  1. Place feed.php anywhere on your server. Optionally download the latest
- version of getID3 and place it somewhere nearby.
- 2. Edit the configuration variables in feed.php to match your server set up 
- all audio files must be within the same directory.
+    version of getID3 and place it somewhere nearby.
+ 2. Edit the configuration variables in feed.php to match your server set up
+    all audio files must be within the same directory.
  3. The URL to feed.php /is/ your feed url.
- [Submit this to iTunes](http://support.apple.com/kb/HT1819) & enjoy.
+    [Submit this to iTunes](http://support.apple.com/kb/HT1819) & enjoy.
 
+## getID3
 
- ## GetID3
+Without getID3 enabled, the script will output file data of the form
 
- Without getID3 enabled, the script will output file data of the form
-
- ```xml
- <item>
+```xml
+<item>
     <title>MP3 File</title>
     <link>
         http://nexuschurch.com.au/sites/all/files/sermon_audio/03062012_AM.mp3

@@ -5,6 +5,7 @@ A php script for generating iTunes-compatible podcast feeds.
 Can optionally use the [getID3 library](http://getid3.sourceforge.net/) for
 reading information about each file from the audio ID3 tags.
 
+
 ## Usage
 
  1. Place feed.php anywhere on your server. Optionally download the latest
@@ -14,7 +15,8 @@ reading information about each file from the audio ID3 tags.
  3. The URL to feed.php /is/ your feed url.
  [Submit this to iTunes](http://support.apple.com/kb/HT1819) & enjoy.
 
- ## getID3
+
+ ## GetID3
 
  Without getID3 enabled, the script will output file data of the form
 

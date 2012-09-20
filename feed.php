@@ -3,6 +3,7 @@ header('Content-Type: application/xml; charset=utf-8');
 
 /**
  * iTunes-Compatible RSS 2.0 MP3 subscription feed script
+ * Original work by Rob W of http://www.podcast411.com/
  * Updated by Aaron Snoswell (aaronsnoswell@gmail.com)
  *
  * Recurses a given directory, reading MP3 ID3 tags and generating an itunes

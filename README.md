@@ -21,7 +21,7 @@ Without getID3 enabled, the script will output file data of the form
 
 ```xml
 <item>
-    <title>MP3 File</title>
+    <title>some_file.mp3</title>
     <link>
         http://nexuschurch.com.au/sites/all/files/sermon_audio/03062012_AM.mp3
     </link>

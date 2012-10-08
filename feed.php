@@ -136,7 +136,7 @@ echo '<?xml version="1.0" encoding="utf-8" ?>';
                 $file_author = $feed_author;
                 $file_duration = "";
                 $file_description = "";
-                $file_date = date("F d Y", filemtime($file_path)); 
+                $file_date = date(DateTime::RFC2822, filemtime($file_path));
                 $file_size = filesize($file_path);
 
                 // Read file metadata from the ID3 tags

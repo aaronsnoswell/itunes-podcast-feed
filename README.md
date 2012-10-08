@@ -1,6 +1,7 @@
 # itunes-podcast-feed
 
-A php script for generating iTunes-compatible podcast feeds.
+A php script for generating [iTunes-compatible](http://www.apple.com/itunes/podcasts/specs.html)
+podcast feeds.
 
 Can optionally use the [getID3 library](http://getid3.sourceforge.net/) for
 reading information about each file from the audio ID3 tags.

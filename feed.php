@@ -3,6 +3,7 @@ header('Content-Type: application/xml; charset=utf-8');
 
 /**
  * iTunes-Compatible RSS 2.0 MP3 subscription feed script
+ * Original work by Rob W of http://www.podcast411.com/
  * Updated by Aaron Snoswell (aaronsnoswell@gmail.com)
  *
  * Recurses a given directory, reading MP3 ID3 tags and generating an itunes
@@ -131,7 +132,7 @@ echo '<?xml version="1.0" encoding="utf-8" ?>';
             // not . or .., ends in .mp3
             if(is_file($file_path) && strrchr($file_path, '.') == ".mp3") {
                 // Initialise file details to sensible defaults
-                $file_title = "MP3 File";
+                $file_title = $file;
                 $file_url = $files_url . $file;
                 $file_author = $feed_author;
                 $file_duration = "";

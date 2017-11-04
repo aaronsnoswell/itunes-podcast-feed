@@ -28,10 +28,18 @@ header('Content-Type: application/xml; charset=utf-8');
 // ============================================ General Configuration Options
 
 // Location of MP3's on server. TRAILING SLASH REQ'D.
-$files_dir = "/var/www/vhosts/nexuschurch.com.au/httpdocs/sites/all/files/sermon_audio/";
+//$files_dir = "/var/www/vhosts/nexuschurch.com.au/httpdocs/sites/all/files/sermon_audio/";
+$files_dir = getcwd().'/';
 
 // Corresponding url for accessing the above directory. TRAILING SLASH REQ'D.
-$files_url = "http://nexuschurch.com.au/sites/all/files/sermon_audio/";
+//$files_url = "http://nexuschurch.com.au/sites/all/files/sermon_audio/";
+if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === 'off') {
+    $protocol = 'http://';
+} else {
+    $protocol = 'https://';
+}
+$base_url = $protocol . $_SERVER['SERVER_NAME'] . dirname($_SERVER['PHP_SELF']);
+$files_url = $base_url.'/';
 
 // Location of getid3 folder, leave blank to disable. TRAILING SLASH REQ'D.
 $getid3_dir = "getid3/";
